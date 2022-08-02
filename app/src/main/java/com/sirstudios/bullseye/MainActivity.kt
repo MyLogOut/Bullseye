@@ -10,5 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
+
+        with(mainBinding.hitMeButton) {
+            this.setOnClickListener {
+                this.width = (this.width * 1.2).toInt()
+                this.height = (this.height * 1.2).toInt()
+            }
+        }
     }
 }
