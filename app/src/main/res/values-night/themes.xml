@@ -2,15 +2,22 @@
     <!-- Base application theme. -->
     <style name="Theme.Bullseye" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/red_accent</item>
+        <item name="colorPrimaryVariant">@color/red_slightly_dark</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/red_slightly_dark</item>
+        <item name="colorSecondaryVariant">@color/gray_slightly_dark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/cardview_light_background</item>
+        <item name="android:shadowColor">@color/cardview_light_background</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="elevation">2dp</item>
     </style>
 </resources>

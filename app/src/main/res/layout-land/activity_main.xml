@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:id="@+id/background_image_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/background"
+            android:scaleType="center"
+            android:layout_marginStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/target_like_background"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+            android:text="@string/instruction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            style="@style/style_instruction_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.20" />
+
+    <TextView
+            android:id="@+id/target_text_view"
+            android:text="@string/target_value_text"
+            style="@style/style_text_big_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/seekBar" />
+
+    <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/nub"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:splitTrack="false"
+            android:paddingStart="55dp"
+            android:paddingEnd="40dp"
+            android:progress="50"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/max_value_slicer"
+            app:layout_constraintStart_toEndOf="@+id/min_value_slicer" />
+
+    <TextView
+            android:id="@+id/min_value_slicer"
+            android:text="@string/min_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/seekBar"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/seekBar" />
+
+    <TextView
+            android:id="@+id/max_value_slicer"
+            android:text="@string/max_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintTop_toTopOf="@+id/seekBar"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/seekBar" />
+
+    <Button
+            android:id="@+id/hitMeButton"
+            android:text="@string/hit_me_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+            android:id="@+id/score"
+            android:text="@string/score_value"
+            tools:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/style_game_stats_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView" />
+
+    <TextView
+            android:id="@+id/current_round_textView"
+            android:text="@string/round_value"
+            tools:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            style="@style/style_game_stats_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    <ImageButton
+            android:id="@+id/start_over_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_button"
+            android:src="@drawable/ic_baseline_replay_24"
+            android:contentDescription="@string/start_over_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/roundGroup_layout"
+            app:layout_constraintTop_toBottomOf="@id/hitMeButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            />
+
+    <ImageButton
+            android:id="@+id/options_button"
+            android:text="@string/options_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_button"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:contentDescription="@string/options_text"
+            app:layout_constraintTop_toTopOf="@id/scoreGroup_layout"
+            app:layout_constraintBottom_toBottomOf="@id/scoreGroup_layout"
+            app:layout_constraintStart_toEndOf="@id/scoreGroup_layout"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/roundGroup_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="2dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="@id/start_over_button"
+            app:layout_constraintBottom_toBottomOf="@id/start_over_button"
+            app:layout_constraintStart_toEndOf="@id/start_over_button"
+            app:layout_constraintEnd_toStartOf="@id/scoreGroup_layout"
+        >
+        <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/round_label_bottom_textview"
+                android:text="@string/round_plain_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/round_value_bottom_textview"
+                android:text="@string/round_plain_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_game_stats_text"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/scoreGroup_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="2dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="@id/roundGroup_layout"
+            app:layout_constraintBottom_toBottomOf="@id/roundGroup_layout"
+            app:layout_constraintStart_toEndOf="@id/roundGroup_layout"
+            app:layout_constraintEnd_toStartOf="@id/options_button"
+            app:layout_constraintVertical_bias="0.0"
+            >
+
+        <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/score_label_bottom_textview"
+                android:text="@string/score_plain_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/score_value_bottom_textview"
+                android:text="@string/score_plain_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_game_stats_text"
+                />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

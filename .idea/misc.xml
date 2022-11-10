@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.174" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.174" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.174" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.174" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/drawable/ic_baseline_replay_24.xml" value="0.174" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/layout-land/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/layout/dialog_menu.xml" value="0.67" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/layout/menu.xml" value="0.24909420289855072" />
+        <entry key="..\:/Users/Suegr/AndroidStudioProjects/Bullseye/app/src/main/res/menu/main_menu.xml" value="0.32135416666666666" />
         <entry key="..\:/Users/Suegr/OneDrive/Documentos/devRoadmap/4. AndroidDeveloper/Sources/Raywenderlich/Android and Kotlin for Beginners/Your first Kotlin Android App - App from Scratch/Project/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
       </map>
     </option>
