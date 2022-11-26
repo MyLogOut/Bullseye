@@ -49,4 +49,7 @@ dependencies {
 
     // Splash-screen library:
     implementation 'androidx.core:core-splashscreen:1.0.0'
+
+    // Shared-preferences library:
+    implementation 'androidx.preference:preference-ktx:1.2.0'
 }

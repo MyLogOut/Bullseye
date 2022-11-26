@@ -1,7 +1,7 @@
 package com.sirstudios.bullseye
 
 import android.content.Context
-import android.preference.PreferenceManager
+import androidx.preference.PreferenceManager
 import android.widget.Toast
 
 class GameDataManager(private val context: Context) {
